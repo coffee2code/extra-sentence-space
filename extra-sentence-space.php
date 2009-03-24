@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Extra Sentence Space
-Version: 1.0
+Version: 1.0.1
 Plugin URI: http://coffee2code.com/wp-plugins/extra-sentence-space
 Author: Scott Reilly
 Author URI: http://coffee2code.com
-Description: Force browsers to display two spaces between sentences.
+Description: Force browsers to display two spaces (when present) between sentences.
 
 Even though you may add two spaces after each sentence when writing a post (assuming you subscribe to a writing style 
 that suggests such spacing) web browsers will collapse consecutive blank spaces into a single space when viewed.
@@ -13,9 +13,9 @@ This plugin adds a &nbsp; (non-breaking space) after sentence-ending punctuation
 two-space intent.
 
 NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences
-in your posts.
+in your posts.  It will NOT insert a second space if only one space is present.
 
-Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, and 2.5.
+Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, 2.5+, 2.6+, 2.7+.
 
 =>> Read the accompanying readme.txt file for more information.  Also, visit the plugin's homepage
 =>> for more information and the latest updates
@@ -30,7 +30,7 @@ Installation:
 */
 
 /*
-Copyright (c) 2008 by Scott Reilly (aka coffee2code)
+Copyright (c) 2008-2009 by Scott Reilly (aka coffee2code)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
@@ -46,7 +46,6 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 function c2c_extra_sentence_space($text) {
-	//return preg_replace("/(?<!Dr|Mr|Ms|Mrs|Lt|Cpt|Cpl|Gen|Maj|Col|Adm)([\.\!\?][\'\"]?)([ ]+)/imsU", "$1&nbsp; ", $text);
 	return preg_replace("/([\.\!\?][\'\"]?)([ ]{2,})/imsU", "$1&nbsp; ", $text);
 } // end c2c_extra_sentence_space()
 
