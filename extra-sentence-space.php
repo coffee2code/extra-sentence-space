@@ -15,7 +15,7 @@ two-space intent.
 NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences
 in your posts.  It will NOT insert a second space if only one space is present.
 
-Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, 2.5+, 2.6+, 2.7+.
+Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, 2.5+, 2.6+, 2.7+, 2.8+.
 
 =>> Read the accompanying readme.txt file for more information.  Also, visit the plugin's homepage
 =>> for more information and the latest updates
