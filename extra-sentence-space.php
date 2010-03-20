@@ -1,7 +1,12 @@
 <?php
+/**
+ * @package Extra_Sentence_Space
+ * @author Scott Reilly
+ * @version 1.1
+ */
 /*
 Plugin Name: Extra Sentence Space
-Version: 1.0.1
+Version: 1.1
 Plugin URI: http://coffee2code.com/wp-plugins/extra-sentence-space
 Author: Scott Reilly
 Author URI: http://coffee2code.com
@@ -15,7 +20,7 @@ two-space intent.
 NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences
 in your posts.  It will NOT insert a second space if only one space is present.
 
-Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, 2.5+, 2.6+, 2.7+, 2.8+.
+Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, 2.5+, 2.6+, 2.7+, 2.8+, 2.9+.
 
 =>> Read the accompanying readme.txt file for more information.  Also, visit the plugin's homepage
 =>> for more information and the latest updates
@@ -23,14 +28,14 @@ Compatible with WordPress 1.5+, 2.0+, 2.1+, 2.2+, 2.3+, 2.5+, 2.6+, 2.7+, 2.8+.
 Installation:
 
 1. Download the file http://coffee2code.com/wp-plugins/extra-sentence-space.zip and unzip it into your 
-/wp-content/plugins/ directory.
+/wp-content/plugins/ directory (or install via the built-in WordPress plugin installer).
 2. Activate the plugin through the 'Plugins' admin menu in WordPress
 3. Begin (or continue) to use two spaces to separate your sentences when writing a post.
 
 */
 
 /*
-Copyright (c) 2008-2009 by Scott Reilly (aka coffee2code)
+Copyright (c) 2008-2010 by Scott Reilly (aka coffee2code)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, 
@@ -45,7 +50,15 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-function c2c_extra_sentence_space($text) {
+/**
+ * Preserves two spaces (when present) between sentences for display as HTML.
+ *
+ * The spaces are preserved by the first space being converted to a non-breaking space entity, '&nbsp;'.
+ *
+ * @param string $text The text to have sentence-ending double-spaces preserved for display as HTML.
+ * @return string The converted text
+ */
+function c2c_extra_sentence_space( $text ) {
 	return preg_replace("/([\.\!\?][\'\"]?)([ ]{2,})/imsU", "$1&nbsp; ", $text);
 } // end c2c_extra_sentence_space()
 
@@ -53,5 +66,6 @@ add_filter('comment_text', 'c2c_extra_sentence_space', 9);
 add_filter('the_title', 'c2c_extra_sentence_space', 9);
 add_filter('the_content', 'c2c_extra_sentence_space', 9);
 add_filter('the_excerpt', 'c2c_extra_sentence_space', 9);
+add_filter('widget_text', 'c2c_extra_sentence_space', 9);
 
 ?>
