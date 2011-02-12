@@ -3,9 +3,9 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: formatting, post, content, space, coffee2code
 Requires at least: 1.5
-Tested up to: 3.0.1
-Stable tag: 1.2
-Version: 1.2
+Tested up to: 3.1
+Stable tag: 1.2.1
+Version: 1.2.1
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -78,6 +78,10 @@ function more_extra_space_punctuation( $punctuation ) {
 
 == Changelog ==
 
+= 1.2.1 =
+* Note compatibility with WP 3.1+
+* Update copyright date (2011)
+
 = 1.2 =
 * Add filter 'c2c_extra_sentence_space_punctuation' to allow customization of the punctuation after which double-spacing (when present) is preserved. Default is '.!?'
 * Add filter 'c2c_extra_sentence_space' to respond to the function of the same name so that users can use the apply_filters('c2c_extra_sentence_space') notation for invoking function
@@ -107,6 +111,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Trivial update: noted compatibility through WP 3.1+ and updated copyright date
 
 = 1.2 =
 Minor update. Highlights: added filter to customize punctuation that get subsequent double-spacing preserved; added if(function_exists()) check around c2c_extra_sentence_space(); minor text reorganization; added verified WP 3.0 compatibility.
