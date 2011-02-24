@@ -2,11 +2,11 @@
 /**
  * @package Extra_Sentence_Space
  * @author Scott Reilly
- * @version 1.2.1
+ * @version 1.2.2
  */
 /*
 Plugin Name: Extra Sentence Space
-Version: 1.2.1
+Version: 1.2.2
 Plugin URI: http://coffee2code.com/wp-plugins/extra-sentence-space/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
