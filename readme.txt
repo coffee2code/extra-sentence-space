@@ -2,10 +2,12 @@
 Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: formatting, post, content, space, coffee2code
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
-Tested up to: 3.3
-Stable tag: 1.2.4
-Version: 1.2.4
+Tested up to: 3.4
+Stable tag: 1.2.5
+Version: 1.2.5
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -80,6 +82,14 @@ function more_extra_space_punctuation( $punctuation ) {
 
 == Changelog ==
 
+= 1.2.5 =
+* Re-license as GPLv2 or later (from X11)
+* Add 'License' and 'License URI' header tags to readme.txt and plugin file
+* Remove ending PHP close tag
+* Note compatibility through WP 3.4+
+* Minor code reformatting (indentation)
+* Update copyright date (2012)
+
 = 1.2.4 =
 * Note compatibility through WP 3.3+
 
@@ -124,6 +134,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.2.5 =
+Trivial update: noted compatibility through WP 3.4+; explicitly stated license
 
 = 1.2.4 =
 Trivial update: noted compatibility through WP 3.3+
