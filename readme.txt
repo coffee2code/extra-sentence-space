@@ -5,8 +5,8 @@ Tags: formatting, post, content, space, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
-Tested up to: 3.8
-Stable tag: 1.3
+Tested up to: 4.0
+Stable tag: 1.3.1
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -17,7 +17,7 @@ Even though you may add two spaces after each sentence when writing a post (assu
 
 NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences in your posts.  It will NOT insert a second space if only one space is present.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/extra-sentence-space/) | [Plugin Directory Page](http://wordpress.org/plugins/extra-sentence-space/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/extra-sentence-space/) | [Plugin Directory Page](https://wordpress.org/plugins/extra-sentence-space/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -82,6 +82,14 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Changelog ==
+
+= 1.3.1 (2014-08-25) =
+* Fix minor error in tests
+* Minor plugin header reformatting
+* Minor code reformatting (spacing)
+* Change documentation links to wp.org to be https
+* Note compatibility through WP 4.0+
+* Add plugin icon
 
 = 1.3 (2013-12-14) =
 * Fix bug if using '/' as custom-defined punctuation
@@ -150,6 +158,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.3.1 =
+Trivial update: noted compatibility through WP 4.0+; added plugin icon.
 
 = 1.3 =
 Minor update: fixed bug if using '/' as custom-defined punctuation; added unit tests; noted compatibility through WP 3.8+

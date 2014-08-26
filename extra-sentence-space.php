@@ -1,25 +1,23 @@
 <?php
 /**
- * @package Extra_Sentence_Space
- * @author Scott Reilly
- * @version 1.3
- */
-/*
-Plugin Name: Extra Sentence Space
-Version: 1.3
-Plugin URI: http://coffee2code.com/wp-plugins/extra-sentence-space/
-Author: Scott Reilly
-Author URI: http://coffee2code.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Description: Force browsers to display two spaces (when present) between sentences.
-
-Compatible with WordPress 1.5 through 3.8+.
-
-=>> Read the accompanying readme.txt file for instructions and documentation.
-=>> Also, visit the plugin's homepage for additional information and updates.
-=>> Or visit: http://wordpress.org/extend/plugins/extra-sentence-space/
-
+ * Plugin Name: Extra Sentence Space
+ * Version:     1.3.1
+ * Plugin URI:  http://coffee2code.com/wp-plugins/extra-sentence-space/
+ * Author:      Scott Reilly
+ * Author URI:  http://coffee2code.com/
+ * License:     GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Description: Force browsers to display two spaces (when present) between sentences.
+ *
+ * Compatible with WordPress 1.5 through 4.0+.
+ *
+ * =>> Read the accompanying readme.txt file for instructions and documentation.
+ * =>> Also, visit the plugin's homepage for additional information and updates.
+ * =>> Or visit: https://wordpress.org/plugins/extra-sentence-space/
+ *
+* @package Extra_Sentence_Space
+* @author Scott Reilly
+* @version 1.3.1
 */
 
 /*
@@ -53,6 +51,7 @@ if ( ! function_exists( 'c2c_extra_sentence_space' ) ) :
 	 */
 	function c2c_extra_sentence_space( $text ) {
 		$punctuation = preg_quote( apply_filters( 'c2c_extra_sentence_space_punctuation', '.!?' ), '/' );
+
 		return preg_replace( "/([$punctuation][\'\"]?)([ ]{2,})/imsU", "$1&nbsp; ", $text );
 	}
 	add_filter( 'c2c_extra_sentence_space', 'c2c_extra_sentence_space' );

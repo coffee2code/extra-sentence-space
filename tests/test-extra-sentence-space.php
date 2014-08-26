@@ -64,11 +64,11 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 
 	static function default_filters() {
 		return array(
-			array( 'comment_text' ).
-			array( 'the_title' ).
-			array( 'the_content' ).
-			array( 'the_excerpt' ).
-			array( 'widget_text' ).
+			array( 'comment_text' ),
+			array( 'the_title' ),
+			array( 'the_content' ),
+			array( 'the_excerpt' ),
+			array( 'widget_text' ),
 		);
 	}
 
