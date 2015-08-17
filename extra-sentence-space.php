@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Extra Sentence Space
- * Version:     1.3.2
+ * Version:     1.3.3
  * Plugin URI:  http://coffee2code.com/wp-plugins/extra-sentence-space/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -9,15 +9,15 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Description: Force browsers to display two spaces (when present) between sentences.
  *
- * Compatible with WordPress 1.5 through 4.1+.
+ * Compatible with WordPress 1.5 through 4.3+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
  * =>> Or visit: https://wordpress.org/plugins/extra-sentence-space/
  *
 * @package Extra_Sentence_Space
-* @author Scott Reilly
-* @version 1.3.2
+* @author  Scott Reilly
+* @version 1.3.3
 */
 
 /*

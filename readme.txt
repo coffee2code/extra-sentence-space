@@ -5,17 +5,17 @@ Tags: formatting, post, content, space, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
-Tested up to: 4.1
-Stable tag: 1.3.2
+Tested up to: 4.3
+Stable tag: 1.3.3
 
 Force browsers to display two spaces (when present) between sentences.
 
 
 == Description ==
 
-Even though you may add two spaces after each sentence when writing a post (assuming you subscribe to a writing style that suggests such spacing) web browsers will collapse consecutive blank spaces into a single space when viewed.  This plugin adds a `&nbsp;` (non-breaking space) after sentence-ending punctuation to retain the appearance of your two-space intent.
+Even though you may add two spaces after each sentence when writing a post (assuming you subscribe to a writing style that suggests such spacing) web browsers will collapse consecutive blank spaces into a single space when viewed. This plugin adds a `&nbsp;` (non-breaking space) after sentence-ending punctuation to retain the appearance of your two-space intent.
 
-NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences in your posts.  It will NOT insert a second space if only one space is present.
+NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences in your posts. It will NOT insert a second space if only one space is present.
 
 Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/extra-sentence-space/) | [Plugin Directory Page](https://wordpress.org/plugins/extra-sentence-space/) | [Author Homepage](http://coffee2code.com)
 
@@ -39,7 +39,7 @@ Did you use two spaces to separate the sentences when you wrote the post?  This 
 
 = Can I enforce double-spacing after other types of punctuation? =
 
-Yes.  See the Filters section for an example of the code you'll need to use.
+Yes. See the Filters section for an example of the code you'll need to use.
 
 = Does this plugin include unit tests? =
 
@@ -52,7 +52,7 @@ The plugin is further customizable via two filters. Typically, these customizati
 
 = c2c_extra_sentence_space =
 
-The 'c2c_extra_sentence_space' filter allows you to use an alternative approach to safely invoke `c2c_extra_sentence_space()` in such a way that if the plugin were deactivated or deleted, then your calls to the function won't cause errors in your site.  This only applies if you use the function directly, which is not typical usage for most users.
+The 'c2c_extra_sentence_space' filter allows you to use an alternative approach to safely invoke `c2c_extra_sentence_space()` in such a way that if the plugin were deactivated or deleted, then your calls to the function won't cause errors in your site. This only applies if you use the function directly, which is not typical usage for most users.
 
 Example:
 
@@ -66,7 +66,7 @@ Do:
 
 = c2c_extra_sentence_space_punctuation =
 
-The 'c2c_extra_sentence_space_punctuation' filter allows you to customize the punctuation, characters, and/or symbols after which double-spacing (when present) is preserved.  By default these are '.!?'.
+The 'c2c_extra_sentence_space_punctuation' filter allows you to customize the punctuation, characters, and/or symbols after which double-spacing (when present) is preserved. By default these are '.!?'.
 
 Arguments:
 
@@ -82,6 +82,10 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Changelog ==
+
+= 1.3.3 (2015-08-16) =
+* Update: Note compatibility through WP 4.3+
+* Update: Minor documentation tweaks (spacing)
 
 = 1.3.2 (2015-02-11) =
 * Note compatibility through WP 4.1+
@@ -162,6 +166,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.3.3 =
+Trivial update: noted compatibility through WP 4.3+
 
 = 1.3.2 =
 Trivial update: noted compatibility through WP 4.1+ and updated copyright date
