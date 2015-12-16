@@ -1,15 +1,16 @@
 <?php
 /**
  * Plugin Name: Extra Sentence Space
- * Version:     1.3.3
+ * Version:     1.3.4
  * Plugin URI:  http://coffee2code.com/wp-plugins/extra-sentence-space/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
+ * Text Domain: extra-sentence-space
  * License:     GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Description: Force browsers to display two spaces (when present) between sentences.
  *
- * Compatible with WordPress 1.5 through 4.3+.
+ * Compatible with WordPress 1.5 through 4.4+.
  *
  * =>> Read the accompanying readme.txt file for instructions and documentation.
  * =>> Also, visit the plugin's homepage for additional information and updates.
@@ -17,11 +18,11 @@
  *
 * @package Extra_Sentence_Space
 * @author  Scott Reilly
-* @version 1.3.3
+* @version 1.3.4
 */
 
 /*
-	Copyright (c) 2008-2015 by Scott Reilly (aka coffee2code)
+	Copyright (c) 2008-2016 by Scott Reilly (aka coffee2code)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -46,7 +47,7 @@ if ( ! function_exists( 'c2c_extra_sentence_space' ) ) :
 	 *
 	 * The spaces are preserved by the first space being converted to a non-breaking space entity, '&nbsp;'.
 	 *
-	 * @param string $text The text to have sentence-ending double-spaces preserved for display as HTML.
+	 * @param string  $text The text to have sentence-ending double-spaces preserved for display as HTML.
 	 * @return string The converted text
 	 */
 	function c2c_extra_sentence_space( $text ) {

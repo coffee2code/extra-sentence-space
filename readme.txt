@@ -5,8 +5,8 @@ Tags: formatting, post, content, space, coffee2code
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
-Tested up to: 4.3
-Stable tag: 1.3.3
+Tested up to: 4.4
+Stable tag: 1.3.4
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -82,6 +82,13 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Changelog ==
+
+= 1.3.4 (2015-12-15) =
+* Change: Note compatibility through WP 4.4+.
+* Change: Explicitly declare methods in unit tests as public.
+* Change: Update copyright date (2016).
+* Add: Define 'Text Domain' header attribute.
+* Add: Create empty index.php to prevent files from being listed if web server has enabled directory listings.
 
 = 1.3.3 (2015-08-16) =
 * Update: Note compatibility through WP 4.3+
@@ -166,6 +173,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.3.4 =
+Trivial update: minor unit test tweaks, noted compatibility through WP 4.4+, and updated copyright date
 
 = 1.3.3 =
 Trivial update: noted compatibility through WP 4.3+

@@ -2,17 +2,19 @@
 
 class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 
-	function tearDown() {
+	public function tearDown() {
 		parent::tearDown();
 		// Ensure the filter gets removed
 		remove_filter( 'c2c_extra_sentence_space_punctuation', array( $this, 'more_extra_space_punctuation' ) );
 	}
 
-	/**
-	 * DATA PROVIDERS
-	 */
+	//
+	//
+	// DATA PROVIDERS
+	//
+	//
 
-	static function two_spaces_after_handled_punctuation() {
+	public static function two_spaces_after_handled_punctuation() {
 		return array(
 			array( 'This is a sentence.  Another sentence.' ),
 			array( 'This is a sentence.  Another sentence.  And yet another' ),
@@ -21,7 +23,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	static function two_spaces_after_unhandled_punctuation() {
+	public static function two_spaces_after_unhandled_punctuation() {
 		return array(
 			array( '(This is a sentence)  Another sentence.' ),
 			array( '/This is a sentence/  Another sentence.' ),
@@ -30,7 +32,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	static function single_space_after_handled_punctuation() {
+	public static function single_space_after_handled_punctuation() {
 		return array(
 			array( 'This is a sentence. Another sentence.' ),
 			array( 'This is a sentence? Another sentence.' ),
@@ -38,7 +40,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	static function single_space_after_unhandled_punctuation() {
+	public static function single_space_after_unhandled_punctuation() {
 		return array(
 			array( '(This is a sentence) Another sentence.' ),
 			array( '/This is a sentence/ Another sentence.' ),
@@ -46,7 +48,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	static function two_spaces_after_custom_handled_punctuation() {
+	public static function two_spaces_after_custom_handled_punctuation() {
 		return array(
 			array( '(This is a sentence)  Another sentence.' ),
 			array( '/This is a sentence/  Another sentence.' ),
@@ -54,7 +56,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	static function single_space_after_custom_handled_punctuation() {
+	public static function single_space_after_custom_handled_punctuation() {
 		return array(
 			array( '(This is a sentence) Another sentence.' ),
 			array( '/This is a sentence/ Another sentence.' ),
@@ -62,7 +64,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	static function default_filters() {
+	public static function default_filters() {
 		return array(
 			array( 'comment_text' ),
 			array( 'the_title' ),
@@ -72,58 +74,63 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		);
 	}
 
-	/**
-	 * FUNCTIONS FOR HOOKING ACTIONS/FILTERS
-	 */
+
+	//
+	//
+	// FUNCTIONS FOR HOOKING ACTIONS/FILTERS
+	//
+	//
 
 
-	function more_extra_space_punctuation( $punctuation ) {
+	public function more_extra_space_punctuation( $punctuation ) {
 		// Add the '/' and ')' characters to the list of characters
 		return $punctuation . '/)@';
 	}
 
-	function preserve_extra_sentence_space( $text ) {
+	public function preserve_extra_sentence_space( $text ) {
 		return str_replace( '  ', '&nbsp; ', $text );
 	}
 
 
-	/**
-	 * TESTS
-	 */
+	//
+	//
+	// TESTS
+	//
+	//
 
 
 	/**
 	 * @dataProvider two_spaces_after_handled_punctuation
 	 */
-	function test_preserves_double_spaces_after_handled_punctuation( $text ) {
+	public function test_preserves_double_spaces_after_handled_punctuation( $text ) {
 		$this->assertEquals( $this->preserve_extra_sentence_space( $text ), c2c_extra_sentence_space( $text ) );
 	}
 
 	/**
 	 * @dataProvider single_space_after_handled_punctuation
 	 */
-	function test_ignores_single_space_after_handled_punctuation( $text ) {
+	public function test_ignores_single_space_after_handled_punctuation( $text ) {
 		$this->assertEquals( $text, c2c_extra_sentence_space( $text ) );
 	}
 
 	/**
 	 * @dataProvider two_spaces_after_unhandled_punctuation
 	 */
-	function test_ignores_double_space_after_unhandled_punctuation( $text ) {
+	public function test_ignores_double_space_after_unhandled_punctuation( $text ) {
 		$this->assertEquals( $text, c2c_extra_sentence_space( $text ) );
 	}
 
 	/**
 	 * @dataProvider single_space_after_unhandled_punctuation
 	 */
-	function test_ignores_single_space_after_unhandled_punctuation( $text ) {
+	public function test_ignores_single_space_after_unhandled_punctuation( $text ) {
 		$this->assertEquals( $text, c2c_extra_sentence_space( $text ) );
 	}
 
 	/**
 	 * @dataProvider two_spaces_after_custom_handled_punctuation
 	 */
-	function test_preserves_double_space_after_custom_handled_punctuation( $text ) {
+	public function test_preserves_double_space_after_custom_handled_punctuation( $text ) {
 		add_filter( 'c2c_extra_sentence_space_punctuation', array( $this, 'more_extra_space_punctuation' ) );
 		$this->assertEquals( $this->preserve_extra_sentence_space( $text ), c2c_extra_sentence_space( $text ) );
 	}
@@ -131,7 +138,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 	/**
 	 * @dataProvider single_space_after_custom_handled_punctuation
 	 */
-	function test_ignores_single_space_after_custom_handled_punctuation( $text ) {
+	public function test_ignores_single_space_after_custom_handled_punctuation( $text ) {
 		add_filter( 'c2c_extra_sentence_space_punctuation', array( $this, 'more_extra_space_punctuation' ) );
 		$this->assertEquals( $this->preserve_extra_sentence_space( $text ), c2c_extra_sentence_space( $text ) );
 	}
@@ -139,7 +146,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 	/**
 	 * @dataProvider two_spaces_after_handled_punctuation
 	 */
-	function test_filter_invocation( $text ) {
+	public function test_filter_invocation( $text ) {
 		$this->assertEquals( $this->preserve_extra_sentence_space( $text ), apply_filters( 'c2c_extra_sentence_space', $text ) );
 	}
 
@@ -149,7 +156,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 	 *
 	 * @dataProvider two_spaces_after_handled_punctuation
 	 */
-	function test_applies_to_post_title( $text ) {
+	public function test_applies_to_post_title( $text ) {
 		$post_id = $this->factory->post->create( array( 'post_title' => $text ) );
 		$this->go_to( get_permalink( $post_id ) );
 		ob_start();
@@ -162,7 +169,7 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 	/**
 	 * @dataProvider default_filters
 	 */
-	function test_applies_to_all_default_filters( $filter ) {
+	public function test_applies_to_all_default_filters( $filter ) {
 		$default_hook_priority = 9;
 		$this->assertEquals( $default_hook_priority, has_filter( $filter, 'c2c_extra_sentence_space' ) );
 	}
