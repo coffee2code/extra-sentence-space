@@ -83,6 +83,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 == Changelog ==
 
+= () =
+* Change: Prevent direct loading of test file.
+
 = 1.3.4 (2015-12-15) =
 * Change: Note compatibility through WP 4.4+.
 * Change: Explicitly declare methods in unit tests as public.

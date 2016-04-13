@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) or die();
+
 class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 
 	public function tearDown() {
@@ -8,11 +10,13 @@ class Extra_Sentence_Space_Test extends WP_UnitTestCase {
 		remove_filter( 'c2c_extra_sentence_space_punctuation', array( $this, 'more_extra_space_punctuation' ) );
 	}
 
+
 	//
 	//
 	// DATA PROVIDERS
 	//
 	//
+
 
 	public static function two_spaces_after_handled_punctuation() {
 		return array(
