@@ -85,6 +85,7 @@ function more_extra_space_punctuation( $punctuation ) {
 
 = () =
 * Change: Prevent direct loading of test file.
+* New: Add LICENSE file.
 
 = 1.3.4 (2015-12-15) =
 * Change: Note compatibility through WP 4.4+.
