@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
 Tested up to: 4.7
-Stable tag: 1.3.4
+Stable tag: 1.3.5
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -83,7 +83,7 @@ function more_extra_space_punctuation( $punctuation ) {
 
 == Changelog ==
 
-= () =
+= 1.3.5 (2017-01-30) =
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
 * Change: Enable more error output for unit tests.
 * Change: Prevent direct loading of test file.
@@ -183,6 +183,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.3.5 =
+Trivial update: noted compatibility through WP 4.7+, updated unit test bootstrap, minor documentation tweaks, updated copyright date
 
 = 1.3.4 =
 Trivial update: minor unit test tweaks, noted compatibility through WP 4.4+, and updated copyright date
