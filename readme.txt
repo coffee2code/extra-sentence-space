@@ -87,6 +87,7 @@ function more_extra_space_punctuation( $punctuation ) {
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
 * Change: Enable more error output for unit tests.
 * Change: Prevent direct loading of test file.
+* Change: Minor inline code documentation reformatting.
 * New: Add LICENSE file.
 
 = 1.3.4 (2015-12-15) =

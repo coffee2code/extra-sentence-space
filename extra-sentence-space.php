@@ -45,10 +45,12 @@ if ( ! function_exists( 'c2c_extra_sentence_space' ) ) :
 	/**
 	 * Preserves two spaces (when present) between sentences for display as HTML.
 	 *
-	 * The spaces are preserved by the first space being converted to a non-breaking space entity, '&nbsp;'.
+	 * The spaces are preserved by the first space being converted to a
+	 * non-breaking space entity, '&nbsp;'.
 	 *
-	 * @param string  $text The text to have sentence-ending double-spaces preserved for display as HTML.
-	 * @return string The converted text
+	 * @param string  $text The text to have sentence-ending double-spaces
+	 *                      preserved for display as HTML.
+	 * @return string       The converted text.
 	 */
 	function c2c_extra_sentence_space( $text ) {
 		$punctuation = preg_quote( apply_filters( 'c2c_extra_sentence_space_punctuation', '.!?' ), '/' );
