@@ -22,9 +22,9 @@ Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/extra-sentence-space/
 
 == Installation ==
 
-1. Unzip `extra-sentence-space.zip` inside the `/wp-content/plugins/` directory (or install via the built-in WordPress plugin installer)
-1. Activate the plugin through the 'Plugins' admin menu in WordPress
-1. Begin (or continue) to use two spaces to separate your sentences when writing a post.
+1. Install via the built-in WordPress plugin installer. Or download and unzip `extra-sentence-space.zip` inside the plugins directory for your site (typically `wp-content/plugins/`)
+2. Activate the plugin through the 'Plugins' admin menu in WordPress
+3. Begin (or continue) to use two spaces to separate your sentences when writing a post.
 
 
 == Frequently Asked Questions ==
@@ -89,6 +89,7 @@ function more_extra_space_punctuation( $punctuation ) {
 * Change: Prevent direct loading of test file.
 * Change: Note compatibility through WP 4.7+.
 * Change: Minor inline code documentation reformatting.
+* Change: Minor readme.txt improvements.
 * New: Add LICENSE file.
 * Change: Update copyright date (2017).
 
