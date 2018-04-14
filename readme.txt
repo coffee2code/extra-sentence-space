@@ -84,6 +84,7 @@ function more_extra_space_punctuation( $punctuation ) {
 == Changelog ==
 
 = () =
+* Change: Minor whitespace tweaks to unit test bootstrap
 * Change: Add GitHub link to readme
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
