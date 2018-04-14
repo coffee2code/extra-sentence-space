@@ -17,7 +17,7 @@ Even though you may add two spaces after each sentence when writing a post (assu
 
 NOTE: The plugin will only enforce the two-space gap in places where two or more spaces actually separate sentences in your posts. It will NOT insert a second space if only one space is present.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/extra-sentence-space/) | [Plugin Directory Page](https://wordpress.org/plugins/extra-sentence-space/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/extra-sentence-space/) | [Plugin Directory Page](https://wordpress.org/plugins/extra-sentence-space/) | [GitHub](https://github.com/coffee2code/extra-sentence-space/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -84,6 +84,7 @@ function more_extra_space_punctuation( $punctuation ) {
 == Changelog ==
 
 = () =
+* Change: Add GitHub link to readme
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
 
