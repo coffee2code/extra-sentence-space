@@ -84,6 +84,7 @@ function more_extra_space_punctuation( $punctuation ) {
 == Changelog ==
 
 = () =
+* New: Add README.md
 * Change: Minor whitespace tweaks to unit test bootstrap
 * Change: Add GitHub link to readme
 * Change: Modify formatting of hook name in readme to prevent being uppercased when shown in the Plugin Directory
