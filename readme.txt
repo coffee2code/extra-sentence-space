@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
 Tested up to: 4.9
-Stable tag: 1.3.5
+Stable tag: 1.3.6
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -83,7 +83,7 @@ function more_extra_space_punctuation( $punctuation ) {
 
 == Changelog ==
 
-= () =
+= 1.3.6 (2018-04-14) =
 * New: Add README.md
 * Change: Minor whitespace tweaks to unit test bootstrap
 * Change: Add GitHub link to readme
@@ -191,6 +191,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 
 == Upgrade Notice ==
+
+= 1.3.6 =
+Trivial update: added README.md, noted compatibility through WP 4.9+, and updated copyright date (2018)
 
 = 1.3.5 =
 Trivial update: noted compatibility through WP 4.7+, updated unit test bootstrap, minor documentation tweaks, updated copyright date
