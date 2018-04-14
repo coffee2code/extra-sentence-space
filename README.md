@@ -1,8 +1,8 @@
 # Extra Sentence Space
 
-A plugin for WordPress that Force browsers to display two spaces (when present) between sentences.
+A plugin for WordPress that forces browsers to display two spaces (when present) between sentences.
 
-This plugin is available in the WordPress Plugin Directory: https://wordpress.org/plugins/remember-me-controls/
+This plugin is available in the WordPress Plugin Directory: https://wordpress.org/plugins/extra-sentence-space/
 
 
 ## Installation
