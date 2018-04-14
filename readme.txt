@@ -50,7 +50,7 @@ Yes.
 
 The plugin is further customizable via two filters. Typically, these customizations would be put into your active theme's functions.php file, or used by another plugin.
 
-= c2c_extra_sentence_space =
+**c2c_extra_sentence_space**
 
 The 'c2c_extra_sentence_space' filter allows you to use an alternative approach to safely invoke `c2c_extra_sentence_space()` in such a way that if the plugin were deactivated or deleted, then your calls to the function won't cause errors in your site. This only applies if you use the function directly, which is not typical usage for most users.
 
@@ -64,7 +64,7 @@ Do:
 
     <?php echo apply_filters( 'c2c_extra_sentence_space', $mytext ); ?>
 
-= c2c_extra_sentence_space_punctuation =
+**c2c_extra_sentence_space_punctuation**
 
 The 'c2c_extra_sentence_space_punctuation' filter allows you to customize the punctuation, characters, and/or symbols after which double-spacing (when present) is preserved. By default these are '.!?'.
 
@@ -86,6 +86,7 @@ function more_extra_space_punctuation( $punctuation ) {
 = () =
 * Change: Minor whitespace tweaks to unit test bootstrap
 * Change: Add GitHub link to readme
+* Change: Modify formatting of hook name in readme to prevent being uppercased when shown in the Plugin Directory
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
 
