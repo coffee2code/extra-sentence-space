@@ -83,6 +83,9 @@ function more_extra_space_punctuation( $punctuation ) {
 
 == Changelog ==
 
+= () =
+* Change: Update copyright date (2018)
+
 = 1.3.5 (2017-01-30) =
 * Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
 * Change: Enable more error output for unit tests.
