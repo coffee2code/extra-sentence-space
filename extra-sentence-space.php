@@ -53,6 +53,15 @@ if ( ! function_exists( 'c2c_extra_sentence_space' ) ) :
 	 * @return string       The converted text.
 	 */
 	function c2c_extra_sentence_space( $text ) {
+		/**
+		 * Filters the characters after which two spaces should be preserved. By
+		 * default these are just sentence-ending punctuation.
+		 *
+		 * @since 1.0
+		 *
+		 * @param string $punctuation String of characters after which two spaces are
+		 *                            preserved. Default '.!?'
+		 */
 		$punctuation = preg_quote( apply_filters( 'c2c_extra_sentence_space_punctuation', '.!?' ), '/' );
 
 		return preg_replace( "/([$punctuation][\'\"]?)([ ]{2,})/imsU", "$1&nbsp; ", $text );

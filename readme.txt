@@ -93,6 +93,7 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 == Changelog ==
 
 = () =
+* New: Add inline documentation for hook
 * Change: Rename readme.txt section from 'Filters' to 'Hooks'
 * Change: Add inline documentation to example in readme.txt
 * Change: Split paragraph in README.md's "Support" section into two
