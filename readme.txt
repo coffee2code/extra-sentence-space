@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
 Tested up to: 5.1
-Stable tag: 1.3.6
+Stable tag: 1.3.7
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -92,7 +92,7 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 
 == Changelog ==
 
-= () =
+= 1.3.7 (2019-02-05) =
 * New: Add CHANGELOG.md and move all but most recent changelog entries into it
 * New: Add inline documentation for hook
 * Change: Rename readme.txt section from 'Filters' to 'Hooks'
@@ -124,6 +124,9 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 
 
 == Upgrade Notice ==
+
+= 1.3.7 =
+Trivial update: created CHANGELOG.md to store historical changelog outside of readme.txt, minor documentation changes, noted compatibility through WP 5.1+, and updated copyright date (2019)
 
 = 1.3.6 =
 Trivial update: added README.md, noted compatibility through WP 4.9+, and updated copyright date (2018)
