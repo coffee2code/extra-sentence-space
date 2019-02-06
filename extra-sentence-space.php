@@ -7,7 +7,7 @@
  * Author URI:  http://coffee2code.com/
  * Text Domain: extra-sentence-space
  * License:     GPLv2 or later
- * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Description: Force browsers to display two spaces (when present) between sentences.
  *
  * Compatible with WordPress 1.5 through 4.9+.
