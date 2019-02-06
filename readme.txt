@@ -46,7 +46,7 @@ Yes. See the Filters section for an example of the code you'll need to use.
 Yes.
 
 
-== Filters ==
+== Hooks ==
 
 The plugin is further customizable via two filters. Typically, these customizations would be put into your active theme's functions.php file, or used by another plugin.
 
@@ -93,6 +93,7 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 == Changelog ==
 
 = () =
+* Change: Rename readme.txt section from 'Filters' to 'Hooks'
 * Change: Add inline documentation to example in readme.txt
 * Change: Split paragraph in README.md's "Support" section into two
 * Change: Note compatibility through WP 5.1+
