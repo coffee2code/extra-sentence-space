@@ -94,6 +94,7 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 
 = () =
 * Change: Add inline documentation to example in readme.txt
+* Change: Split paragraph in README.md's "Support" section into two
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
