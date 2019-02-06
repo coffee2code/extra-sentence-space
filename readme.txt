@@ -74,16 +74,26 @@ Arguments:
 
 Example:
 
-`add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuation' );
+`
+/**
+ * Modifies the list of characters after which two spaces should be preserved
+ * to include a forward slash.
+ *
+ * @param string $punctuation The punctuation.
+ * @return string
+ */
 function more_extra_space_punctuation( $punctuation ) {
 	// Add the '/' and ')' characters to the list of characters
 	return $punctuation . '/)';
-}`
+}
+add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuation' );
+`
 
 
 == Changelog ==
 
 = () =
+* Change: Add inline documentation to example in readme.txt
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
