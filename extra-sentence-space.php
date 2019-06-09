@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Extra Sentence Space
- * Version:     1.3.7
+ * Version:     1.3.8
  * Plugin URI:  http://coffee2code.com/wp-plugins/extra-sentence-space/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -18,8 +18,16 @@
  *
 * @package Extra_Sentence_Space
 * @author  Scott Reilly
-* @version 1.3.7
+* @version 1.3.8
 */
+
+/*
+ * TODO:
+ * - Consider adding force extra sentence space mode/setting. Under Settings -> Reading,
+ *   add setting that forces a second space after punctuation. Might be
+ *   tricky tho since we don't want to affect punctuation within code, for example.
+ *   See: https://wordpress.org/support/topic/wasnt-working-on-all-posts/
+ */
 
 /*
 	Copyright (c) 2008-2019 by Scott Reilly (aka coffee2code)

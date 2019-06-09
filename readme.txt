@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
 Tested up to: 5.2
-Stable tag: 1.3.7
+Stable tag: 1.3.8
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -92,6 +92,11 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 
 == Changelog ==
 
+= 1.3.8 (2019-06-08) =
+* Change: Update unit test install script and bootstrap to use latest WP unit test repo
+* Change: Note compatibility through WP 5.2+
+* Change: Add link to CHANGELOG.md in README.md
+
 = 1.3.7 (2019-02-05) =
 * New: Add CHANGELOG.md and move all but most recent changelog entries into it
 * New: Add inline documentation for hook
@@ -110,20 +115,13 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 * Change: Note compatibility through WP 4.9+
 * Change: Update copyright date (2018)
 
-= 1.3.5 (2017-01-30) =
-* Change: Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable.
-* Change: Enable more error output for unit tests.
-* Change: Prevent direct loading of test file.
-* Change: Note compatibility through WP 4.7+.
-* Change: Minor inline code documentation reformatting.
-* Change: Minor readme.txt improvements.
-* New: Add LICENSE file.
-* Change: Update copyright date (2017).
-
 = Full changelog is available in [CHANGELOG.md](CHANGELOG.md). =
 
 
 == Upgrade Notice ==
+
+= 1.3.8 =
+Trivial update: modernized unit tests, noted compatibility through WP 5.2+
 
 = 1.3.7 =
 Trivial update: created CHANGELOG.md to store historical changelog outside of readme.txt, minor documentation changes, noted compatibility through WP 5.1+, and updated copyright date (2019)
