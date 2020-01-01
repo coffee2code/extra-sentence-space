@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Extra Sentence Space
- * Version:     1.3.8
+ * Version:     1.3.9
  * Plugin URI:  http://coffee2code.com/wp-plugins/extra-sentence-space/
  * Author:      Scott Reilly
  * Author URI:  http://coffee2code.com/
@@ -18,7 +18,7 @@
  *
 * @package Extra_Sentence_Space
 * @author  Scott Reilly
-* @version 1.3.8
+* @version 1.3.9
 */
 
 /*

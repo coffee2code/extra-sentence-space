@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 1.5
 Tested up to: 5.3
-Stable tag: 1.3.8
+Stable tag: 1.3.9
 
 Force browsers to display two spaces (when present) between sentences.
 
@@ -92,6 +92,11 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 
 == Changelog ==
 
+= 1.3.9 (2019-12-31) =
+* Fix: Use full path to CHANGELOG.md in the Changelog section of readme.txt
+* Change: Note compatibility through WP 5.3+
+* Change: Update copyright date (2020)
+
 = 1.3.8 (2019-06-08) =
 * Change: Update unit test install script and bootstrap to use latest WP unit test repo
 * Change: Note compatibility through WP 5.2+
@@ -107,18 +112,13 @@ add_filter( 'c2c_extra_sentence_space_punctuation', 'more_extra_space_punctuatio
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS
 
-= 1.3.6 (2018-04-14) =
-* New: Add README.md
-* Change: Minor whitespace tweaks to unit test bootstrap
-* Change: Add GitHub link to readme
-* Change: Modify formatting of hook name in readme to prevent being uppercased when shown in the Plugin Directory
-* Change: Note compatibility through WP 4.9+
-* Change: Update copyright date (2018)
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/extra-sentence-space/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 1.3.9 =
+Trivial update: noted compatibility through WP 5.3+ and updated copyright date (2020)
 
 = 1.3.8 =
 Trivial update: modernized unit tests, noted compatibility through WP 5.2+
