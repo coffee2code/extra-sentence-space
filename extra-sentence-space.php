@@ -27,6 +27,8 @@
  *   add setting that forces a second space after punctuation. Might be
  *   tricky tho since we don't want to affect punctuation within code, for example.
  *   See: https://wordpress.org/support/topic/wasnt-working-on-all-posts/
+ * - Add filter `c2c_extra_sentence_space_filters` that allows customization of
+ *   the default filters affected by the plugin.
  */
 
 /*
